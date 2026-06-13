@@ -1,7 +1,12 @@
 * {
     font-family: sans-serif;
 }
-
+@mixin pad {
+    padding: 30px;
+    text-align: center;
+    background-color: #EAF2F5;
+    border-radius: 15px;
+}
 
 @mixin btn {
     padding: 10px 35px;
@@ -84,6 +89,20 @@
         background-color: #AF93FF;
     }
 }
+.m1 {
+    @include section;
+    div {
+        @include pad;
+    }
+}
+.m2 {
+    @include section;
+    justify-content: center;
+    gap: 30px;
+    div {
+        @include pad;
+    }
+}
 
 
 
@@ -114,4 +133,11 @@
             text-align: center;
         }
     }
+    .m1, .m2 {
+       width: 90%;
+       margin: auto;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+   
 }

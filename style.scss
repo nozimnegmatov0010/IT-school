@@ -103,6 +103,13 @@
         @include pad;
     }
 }
+.m3 {
+    @include section;
+    flex-direction: column;
+}
+.m4 {
+    @include section;
+}
 
 
 
@@ -128,16 +135,27 @@
 
     }
     .p6 {
+   
         img {
             display: none;
             text-align: center;
         }
+    }
+    .p13 {
+        display: none;
     }
     .m1, .m2 {
        width: 90%;
        margin: auto;
         flex-direction: column;
         row-gap: 15px;
+    }
+    .m3 {
+        text-align: center;
+    }
+    .m4 {
+        width: 90%;
+        margin: auto;
     }
    
 }

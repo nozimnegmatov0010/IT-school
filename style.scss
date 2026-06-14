@@ -134,6 +134,21 @@
         border: none;
     }
 }
+.m8 {
+    @include section;
+    justify-content: center;
+    gap: 20px;
+    div {
+        padding: 25px;
+        border-radius: 35px;
+        background-color: #EAF2F5;
+        height: 270px;
+    }
+}
+.m9 {
+    display: none;
+}
+
 
 
 
@@ -184,7 +199,14 @@
     flex-direction: column;
     text-align: start;
    }
-   .m7 {
+   .m7, .m8 {
     flex-direction: column;
    }
+   .m10 {
+    display: none;
+   }
+   .m9 {
+    display: block;
+   }
+
 }

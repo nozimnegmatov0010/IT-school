@@ -110,7 +110,30 @@
 .m4 {
     @include section;
 }
-
+.m5 {
+    @include section;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    h1 {
+        font-size: 45px;
+        color: #5096FF;
+    }
+    h3 {
+        color: #22253B;
+    }
+}
+.m7 {
+    @include section;
+    justify-content: center;
+    gap: 30px;
+    .m6 {
+         padding: 15px 40px;
+        background-color: #F15525;
+        color: white;
+        border-radius: 20px;
+        border: none;
+    }
+}
 
 
 
@@ -157,5 +180,11 @@
         width: 90%;
         margin: auto;
     }
-   
+   .m5 {
+    flex-direction: column;
+    text-align: start;
+   }
+   .m7 {
+    flex-direction: column;
+   }
 }
